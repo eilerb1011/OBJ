@@ -5,17 +5,18 @@
       "Effect": "Allow",
       "Principal": {
         "AWS": [
-	  "arn:aws:iam:::user/cab36e05-2aad-4436-b2cb-41ed1970a97d",
-          "arn:aws:iam:::user/dea2686b-8859-4fcc-953f-843c2aa41883"
+	  "arn:aws:iam:::user/Third-Party-CephUID",
+          "arn:aws:iam:::user/Third-Party-CephUID"
 	]
       },
       "Action": [
         "s3:GetObject",
-        "s3:ListBucket"
+        "s3:ListBucket",
+	"ADD-Additional-actions-here"
       ],
       "Resource": [
-        "arn:aws:s3:::eiler-glover-cross-acct",
-        "arn:aws:s3:::eiler-glover-cross-acct/*"
+        "arn:aws:s3:::mybucketname-goes-here",
+        "arn:aws:s3:::mybucketname-goes-here/*"
       ]
     }
   ]
