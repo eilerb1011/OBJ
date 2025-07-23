@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+	  "arn:aws:iam:::user/cab36e05-2aad-4436-b2cb-41ed1970a97d",
+          "arn:aws:iam:::user/dea2686b-8859-4fcc-953f-843c2aa41883"
+	]
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::eiler-glover-cross-acct",
+        "arn:aws:s3:::eiler-glover-cross-acct/*"
+      ]
+    }
+  ]
+}
